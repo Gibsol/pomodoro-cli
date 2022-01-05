@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdlib.h>
 #include <unistd.h>
+#include <iomanip>
+
 
 using namespace std;
 
@@ -24,15 +26,23 @@ void user_count(){
 
 void display_work_timer(){
   system("clear");
+  cout << endl;
+  cout << setw(25);
   cout << "POMODORO" << endl;
+  cout << setw(27);
   cout << "TIME TO WORK" << endl;
+  cout << setw(20);
   cout << "" << work_minutes << work_seconds << endl;
 }
 
 void display_rest_timer(){
   system("clear");
+  cout << endl;
+  cout << setw(25);
   cout << "POMODORO" << endl;
+  cout << setw(27);
   cout << "TIME TO REST" << endl;
+  cout << setw(20);
   cout << "" << rest_minutes << rest_seconds << endl;
 }
 
