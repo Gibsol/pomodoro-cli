@@ -3,10 +3,8 @@
 #include <iomanip>
 
 
-int rest_seconds;
-int work_seconds;
-int work_minutes;
-int rest_minutes;
+int minutes_p;
+int seconds_p;
 int work;
 int rest;
 char user_exit;
@@ -36,40 +34,39 @@ void pomodoro_work(){
     display_timer();
     
     std::cout << std::setw(27);
-    std::cout << "TIME TO REST" << std::endl;
+    std::cout << "TIME TO WORK" << std::endl;
     std::cout << std::setw(20);
-    std::cout << "" << work_minutes << work_seconds << std::endl;
+    std::cout << "" << minutes_p << seconds_p << std::endl;
 
-    work_seconds++;
+    seconds_p++;
     
-    if(work_seconds == 60){
-      work_minutes++;
-      work_seconds = 0;
+    if(seconds_p == 60){
+      minutes_p++;
+      seconds_p = 0;
     }
-
-    if(work_minutes == work) break;
+    if(minutes_p == work) break;
   }
 }
 
 // timer for the rest.
 void pomodoro_rest(){
   while(true){
-    sleep(1);
+    sleep(1); 
     display_timer();
-    
+
     std::cout << std::setw(27);
     std::cout << "TIME TO REST" << std::endl;
     std::cout << std::setw(20);
-    std::cout << "" << rest_minutes << rest_seconds << std::endl;
+    std::cout << "" << minutes_p <<seconds_p << std::endl;
     
-    rest_seconds++;
+    seconds_p++;
 
-    if(rest_seconds == 60){
-      rest_minutes++;
-      rest_seconds = 0;
+    if(seconds_p == 60){
+      minutes_p++;
+      seconds_p = 0;
     }
     
-    if(rest_minutes == rest) break;; 
+    if(minutes_p == rest) break;; 
   }
 }
 
