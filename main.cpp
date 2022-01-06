@@ -4,8 +4,6 @@
 #include <iomanip>
 
 
-using namespace std;
-
 
 int rest_seconds;
 int work_seconds;
@@ -17,39 +15,39 @@ char user_exit;
 
 // creates the choice for a user of how many minutes would they want to work and rest.
 void user_count(){ 
-  cout << "enter how many minutes would you want to work: ";
-  cin >> work;
+  std::cout << "enter how many minutes would you want to work: ";
+  std::cin >> work;
   
-  cout << "enter how many minutes would you want to rest: ";
-  cin >> rest;
+  std::cout << "enter how many minutes would you want to rest: ";
+  std::cin >> rest;
 }
 
 void display_work_timer(){
   system("clear");
-  cout << endl;
+  std::cout << std::endl;
 
-  cout << setw(25);
-  cout << "POMODORO" << endl;
+  std::cout << std::setw(25);
+  std::cout << "POMODORO" << std::endl;
   
-  cout << setw(27);
-  cout << "TIME TO WORK" << endl;
+  std::cout << std::setw(27);
+  std::cout << "TIME TO WORK" << std::endl;
   
-  cout << setw(20);
-  cout << "" << work_minutes << work_seconds << endl;
+  std::cout << std::setw(20);
+  std::cout << "" << work_minutes << work_seconds << std::endl;
 }
 
 void display_rest_timer(){
   system("clear");
-  cout << endl;
+  std::cout << std::endl;
 
-  cout << setw(25);
-  cout << "POMODORO" << endl;
+  std::cout << std::setw(25);
+  std::cout << "POMODORO" << std::endl;
   
-  cout << setw(27);
-  cout << "TIME TO REST" << endl;
+  std::cout << std::setw(27);
+  std::cout << "TIME TO REST" << std::endl;
 
-  cout << setw(20);
-  cout << "" << rest_minutes << rest_seconds << endl;
+  std::cout << std::setw(20);
+  std::cout << "" << rest_minutes << rest_seconds << std::endl;
 }
 
 // timer for the work.
@@ -94,8 +92,8 @@ int main(){
     
     system("clear"); 
     
-    cout << "would you want to continue? Y/n" << endl;
-    cin >> user_exit;
+    std::cout << "would you want to continue? Y/n" << std::endl;
+    std::cin >> user_exit;
   }
   return 0;
 }
