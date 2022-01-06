@@ -1,8 +1,6 @@
 #include <iostream>
-#include <stdlib.h>
 #include <unistd.h>
 #include <iomanip>
-
 
 
 int rest_seconds;
@@ -13,6 +11,7 @@ int work;
 int rest;
 char user_exit;
 
+
 // creates the choice for a user of how many minutes would they want to work and rest.
 void user_count(){ 
   std::cout << "enter how many minutes would you want to work: ";
@@ -22,46 +21,33 @@ void user_count(){
   std::cin >> rest;
 }
 
-void display_work_timer(){
+void display_timer(){
   system("clear");
   std::cout << std::endl;
 
   std::cout << std::setw(25);
   std::cout << "POMODORO" << std::endl;
-  
-  std::cout << std::setw(27);
-  std::cout << "TIME TO WORK" << std::endl;
-  
-  std::cout << std::setw(20);
-  std::cout << "" << work_minutes << work_seconds << std::endl;
-}
-
-void display_rest_timer(){
-  system("clear");
-  std::cout << std::endl;
-
-  std::cout << std::setw(25);
-  std::cout << "POMODORO" << std::endl;
-  
-  std::cout << std::setw(27);
-  std::cout << "TIME TO REST" << std::endl;
-
-  std::cout << std::setw(20);
-  std::cout << "" << rest_minutes << rest_seconds << std::endl;
 }
 
 // timer for the work.
 void pomodoro_work(){
   while(true){
     sleep(1);
-    display_work_timer();
+    display_timer();
     
-    work_seconds++;
+    std::cout << std::setw(27);
+    std::system("Color 0A");  
+    std::cout << "TIME TO REST" << std::endl;
+    std::cout << std::setw(20);
+    std::cout << "" << work_minutes << work_seconds << std::endl;
 
+    work_seconds++;
+    
     if(work_seconds == 60){
       work_minutes++;
       work_seconds = 0;
     }
+
     if(work_minutes == work) break;
   }
 }
@@ -70,7 +56,12 @@ void pomodoro_work(){
 void pomodoro_rest(){
   while(true){
     sleep(1);
-    display_rest_timer();
+    display_timer();
+    
+    std::cout << std::setw(27);
+    std::cout << "TIME TO REST" << std::endl;
+    std::cout << std::setw(20);
+    std::cout << "" << rest_minutes << rest_seconds << std::endl;
     
     rest_seconds++;
 
@@ -78,10 +69,10 @@ void pomodoro_rest(){
       rest_minutes++;
       rest_seconds = 0;
     }
+    
     if(rest_minutes == rest) break;; 
   }
 }
-
 
 int main(){
   while(user_exit != 'n'){
