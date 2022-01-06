@@ -36,7 +36,6 @@ void pomodoro_work(){
     display_timer();
     
     std::cout << std::setw(27);
-    std::system("Color 0A");  
     std::cout << "TIME TO REST" << std::endl;
     std::cout << std::setw(20);
     std::cout << "" << work_minutes << work_seconds << std::endl;
