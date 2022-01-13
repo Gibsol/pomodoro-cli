@@ -2,14 +2,17 @@
 #include <unistd.h>
 #include <iomanip>
 
+const int minute = 60;
 
 int rest_seconds;
 int work_seconds;
 int work_minutes;
 int rest_minutes;
+
 int work;
 int rest;
 int total_time;  // total working time
+
 char user_exit;
 
 // creates the choice for a user of how many minutes would they want to work and rest.
@@ -44,7 +47,7 @@ void pomodoro_work(){
 
     work_seconds++;
     
-    if(work_seconds == 60){
+    if(work_seconds == minute){
       work_minutes++;
       work_seconds = 0;
     }
@@ -66,7 +69,7 @@ void pomodoro_rest(){
     
     rest_seconds++;
 
-    if(rest_seconds == 60){
+    if(rest_seconds == minute){
       rest_minutes++;
       rest_seconds = 0;
     }
