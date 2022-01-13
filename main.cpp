@@ -84,7 +84,8 @@ int main(){
    
     work = 0;
     rest = 0;
-
+    work_minutes = 0;
+    work_seconds = 0;
 
     system("clear"); 
   
