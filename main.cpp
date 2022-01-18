@@ -4,6 +4,8 @@
 
 const int minute = 60;
 
+bool time_correct;  // sets to true, when the user enters the correct value of time (>=0)
+
 int rest_seconds;
 int work_seconds;
 int work_minutes;
@@ -11,9 +13,10 @@ int rest_minutes;
 
 int work;
 int rest;
-int total_time;  // total working time
+int total_time;  
 
 char user_exit;
+char exit_key;
 
 // creates the choice for a user of how many minutes would they want to work and rest.
 void user_count(){ 
@@ -80,8 +83,20 @@ void pomodoro_rest(){
 
 int main(){
   while(user_exit != 'n'){
-    user_count();
-    
+    while(time_correct != true){
+      try{
+        user_count();
+      if(work <= 0 | rest <= 0){
+          throw(work);
+          throw(rest);
+        }
+      else time_correct = true;
+      }
+      catch(int time_check){
+        std::cerr << "you have entered the wrong amount of time" << std::endl;
+      }
+  }    
+
     pomodoro_work();
     pomodoro_rest();
    
