@@ -9,5 +9,7 @@ A basic terminal pomodoro application written in C++ (Only for Linux).
 ## License
 GNU General Public License v3.0.
 
+![alt text](https://gitlab.com/Gibsol/terminal-pomodoro/-/blob/main/images/terminal%20pomodoro.png)
+
 ## Project status
 In development.
