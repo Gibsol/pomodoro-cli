@@ -1,6 +1,6 @@
 # Terminal Pomodoro
 
-A basic terminal pomodoro application written in C++ (Only for Linux). 
+A basic Console Line Interface Pomodoro application written in C++.
 
 ![alt text](https://gitlab.com/Gibsol/terminal-pomodoro/-/blob/main/src/images/terminal%20pomodoro.png)
 
