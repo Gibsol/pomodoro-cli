@@ -2,7 +2,8 @@
 
 A basic Console Line Interface Pomodoro application written in C++.
 
-![alt text](https://gitlab.com/Gibsol/terminal-pomodoro/-/blob/main/src/images/terminal%20pomodoro.png)
+![alt text][logo]
+[logo]: (https://gitlab.com/Gibsol/terminal-pomodoro/-/blob/main/src/images/terminal%20pomodoro.png)
 
 ## Installation
 1. Clone the repo.
