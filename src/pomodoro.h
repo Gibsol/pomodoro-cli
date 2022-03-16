@@ -49,6 +49,9 @@ public:
             if(rest_minutes == rest) break;
         }
     }
+
+    void set_work_minutes(int work_minutes) { this->work_minutes = work_minutes; }
+    void set_work_seconds(int work_seconds) { this->work_seconds = work_seconds; } 
             
 };
 

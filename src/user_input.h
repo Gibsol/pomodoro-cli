@@ -2,6 +2,7 @@
 #define USER_INPUT_H
 #include <iostream>
 
+const char EXIT_KEY = 'n';
 int work;
 int rest;
 int total_time;
