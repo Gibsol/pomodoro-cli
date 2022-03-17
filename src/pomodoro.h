@@ -13,6 +13,8 @@ private:
     int work_seconds;
     int work_minutes;
 public:
+    Pomodoro() : rest_seconds(0), rest_minutes(0), work_seconds(0), work_minutes(0) {}
+
     void display_timer() {
         system("clear");
         std::cout << std::endl << std::setw(25) << "POMODORO\n";
