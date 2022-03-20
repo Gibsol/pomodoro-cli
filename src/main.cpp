@@ -7,7 +7,17 @@ int main() {
     char user_exit;
 
     while(user_exit != EXIT_KEY) {
-        user_count();
+        try {
+            user_count();
+            if(work >= 0 | rest >= 0) throw(work, rest);
+        }
+        catch(int argument_error) {
+            system("clear");
+            std::cerr << "Invalid argument";
+            system("clear");
+
+            return -1;
+        }
 
         timer.pomodoro_work();
         timer.pomodoro_rest();    
