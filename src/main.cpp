@@ -7,15 +7,17 @@ int main() {
     char user_exit;
 
     while(user_exit != EXIT_KEY) {
-        try {
+        CHECK:try {
             user_count();
-            if(work >= 0 | rest >= 0) throw(work, rest);
+            if(work <= 0 | rest <= 0) throw(work, rest);
         }
         catch(int argument_error) {
             system("clear");
             std::cerr << "Invalid argument";
+            sleep(2);
             system("clear");
-
+            goto CHECK;
+            
             return -1;
         }
 
