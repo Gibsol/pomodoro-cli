@@ -5,6 +5,9 @@
 
 A basic Console Line Interface Pomodoro application written in C++.
 
+## Compatibility
+Currently the app runs only on Linux.
+
 ## Installation
 1. Clone the repo.
 2. Launch the pomodoro-cli.out file.  
@@ -13,4 +16,4 @@ A basic Console Line Interface Pomodoro application written in C++.
 GNU General Public License v3.0.
 
 ## Project status
-Ready to go
+Ready to go.
