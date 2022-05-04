@@ -1,5 +1,8 @@
 # Terminal Pomodoro
 
+![Alt Image text](https://gitlab.com/Gibsol/pomodoro-cli/-/raw/main/images/terminal%20pomodoro.png)
+
+
 A basic Console Line Interface Pomodoro application written in C++.
 
 ## Installation
