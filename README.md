@@ -13,4 +13,4 @@ A basic Console Line Interface Pomodoro application written in C++.
 GNU General Public License v3.0.
 
 ## Project status
-Ready to go, but still needs to be finished 
+Ready to go
