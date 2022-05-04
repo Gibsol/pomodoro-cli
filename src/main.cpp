@@ -1,5 +1,6 @@
 #include <iostream>
 #include "pomodoro.h"
+#include "pomodoro.cpp"
 #include "user_input.h"
 
 int main() {
