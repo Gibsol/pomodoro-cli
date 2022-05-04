@@ -1,7 +1,16 @@
 #include "pomodoro.h"
 
+const int MINUTE = 60;
+const char EXIT_KEY = 'n';
+
 Pomodoro::Pomodoro() : rest_seconds(0), rest_minutes(0), work_seconds(0), work_minutes(0) {}
 
+int Pomodoro::get_work() { return work; }
+int Pomodoro::get_rest() { return rest; }
+int Pomodoro::get_total_time() { return total_time; }
+
+void Pomodoro::set_work(int work) { this->work = work; } 
+void Pomodoro::set_rest(int rest) { this->rest = rest; }
 void Pomodoro::set_work_minutes(int work_minutes) { this->work_minutes = work_minutes; }
 void Pomodoro::set_work_seconds(int work_seconds) { this->work_seconds = work_seconds; }
 
@@ -40,4 +49,10 @@ void Pomodoro::pomodoro_rest() {
 
         if(rest_minutes == rest) break;
     }
+}
+
+void Pomodoro::user_count() {
+    std::cout << "Enter how many minutes would you want to work: "; std::cin >> work;
+    total_time += work;
+    std::cout << "Enter how many minutes would you want to rest: "; std::cin >> rest;
 }
