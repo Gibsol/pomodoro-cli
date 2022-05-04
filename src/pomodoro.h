@@ -1,5 +1,7 @@
 #ifndef POMODORO_H
 #define POMODORO_H
+
+
 #include <iostream>
 #include <unistd.h>
 #include <iomanip>
@@ -32,5 +34,6 @@ public:
     void pomodoro_work(); 
     void pomodoro_rest(); 
 };
+
 
 #endif
