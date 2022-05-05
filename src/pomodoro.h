@@ -8,8 +8,6 @@
 
 class Pomodoro {
 private:
-    const int MINUTE = 60;
-    const char EXIT_KEY = 'n';
     int work;
     int rest;
     int total_time;
