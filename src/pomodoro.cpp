@@ -16,6 +16,7 @@ void Pomodoro::display_timer() {
     std::cout << std::endl << std::setw(25) << "POMODORO\n";
 }
 
+// work timer
 void Pomodoro::pomodoro_work() {
     while(true) {
         sleep(1);
@@ -32,6 +33,7 @@ void Pomodoro::pomodoro_work() {
     }
 }
 
+// rest timer
 void Pomodoro::pomodoro_rest() {
     while(true) {
         sleep(1);
