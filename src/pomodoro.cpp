@@ -1,8 +1,5 @@
 #include "pomodoro.h"
 
-const int MINUTE = 60;
-const char EXIT_KEY = 'n';
-
 Pomodoro::Pomodoro() : rest_seconds(0), rest_minutes(0), work_seconds(0), work_minutes(0) {}
 
 int Pomodoro::get_work() { return work; }
