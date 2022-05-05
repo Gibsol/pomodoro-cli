@@ -6,6 +6,7 @@ int main() {
     Pomodoro timer;
     char user_exit;
 
+// checks whether the user have entered the valid argument or not
     while(user_exit != EXIT_KEY) {
         CHECK:try {
             timer.user_count();
