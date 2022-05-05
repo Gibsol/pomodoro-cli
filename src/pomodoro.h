@@ -16,6 +16,9 @@ private:
     int work_seconds;
     int work_minutes;
 public:
+    const int MINUTE = 60;
+    const char EXIT_KEY = 'n';
+
     Pomodoro();
 
     int get_work();
