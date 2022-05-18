@@ -10,7 +10,7 @@ Currently the app runs only on Linux.
 
 ## Installation
 1. Clone the repo.
-2. Launch the pomodoro-cli.out file.  
+2. Launch the /bin/pomodoro-cli.out file.  
 
 ## License
 GNU General Public License v3.0.
