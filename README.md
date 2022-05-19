@@ -1,4 +1,4 @@
-# Terminal Pomodoro
+# Console Line Pomodoro
 
 ![Alt Image text](https://gitlab.com/Gibsol/pomodoro-cli/-/raw/main/images/terminal%20pomodoro.png)
 
