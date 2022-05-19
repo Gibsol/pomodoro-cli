@@ -11,6 +11,7 @@ private:
     int work;
     int rest;
     int total_time;
+
     int rest_seconds;
     int rest_minutes;
     int work_seconds;
