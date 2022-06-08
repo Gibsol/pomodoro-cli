@@ -1,9 +1,9 @@
-# Console Line Pomodoro
+# Command Line Pomodoro
 
 ![Alt Image text](https://gitlab.com/Gibsol/pomodoro-cli/-/raw/main/images/terminal%20pomodoro.png)
 
 
-A basic Console Line Interface Pomodoro application written in C++.
+A basic Command Line Interface Pomodoro application written in C++.
 
 ## Compatibility
 Currently the app runs only on Linux.
