@@ -17,7 +17,7 @@ int main() {
             std::cerr << "Invalid argument";
             sleep(2);
             system("clear");
-            goto CHECK; // if the argument is ivalid, it goes back to the "try" section and tries again
+            goto CHECK; // if the argument is invalid, it goes back to the "try" section and tries again
             
             return -1;
         }
