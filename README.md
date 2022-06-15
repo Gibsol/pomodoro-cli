@@ -8,7 +8,7 @@ A basic Command Line Interface Pomodoro application written in C++.
 ## Reasons to use it and the Pomodoro technique in general
 
 It helps you resist all of those self-interruptions and re-train your brains to focus.\
-Read more about the technique and history behind it: [The Pomodoro Technique](https://www.amazon.com/Pomodoro-Technique-Acclaimed-Time-Management-Transformed-ebook/dp/B01N2XFCSL)
+Read more about the technique and the history behind it: [The Pomodoro Technique](https://www.amazon.com/Pomodoro-Technique-Acclaimed-Time-Management-Transformed-ebook/dp/B01N2XFCSL)
 
 ## Compatibility
 
