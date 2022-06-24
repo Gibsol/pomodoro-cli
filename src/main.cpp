@@ -1,5 +1,3 @@
-#include <iostream>
-#include "pomodoro.h"
 #include "pomodoro.cpp"
 
 int main() {
