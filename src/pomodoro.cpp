@@ -54,6 +54,8 @@ void Pomodoro::pomodoro_rest() {
 }
 
 void Pomodoro::user_count() {
+    printf("\e[?25l");
+    system("clear");
     std::cout << "Enter how many minutes would you want to work: "; std::cin >> work;
     total_time += work;
     std::cout << "Enter how many minutes would you want to rest: "; std::cin >> rest;

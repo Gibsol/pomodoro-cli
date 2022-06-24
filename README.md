@@ -2,7 +2,6 @@
 
 ![An example of the timer](https://gitlab.com/Gibsol/pomodoro-cli/-/raw/main/images/terminal%20pomodoro.png)
 
-
 A basic Command Line Interface Pomodoro application written in C++.
 
 ## Reasons to use it and the Pomodoro technique in general
