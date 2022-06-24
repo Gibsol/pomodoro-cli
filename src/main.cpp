@@ -8,7 +8,8 @@ int main() {
     while(user_exit != EXIT_KEY) {
         CHECK:try {
             timer.user_count();
-            if(timer.get_work() <= 0 | timer.get_rest() <= 0) throw(timer.get_work(), timer.get_rest());
+            if(timer.get_work() <= 0 | timer.get_rest() <= 0) 
+                throw(timer.get_work(), timer.get_rest());
         }
         catch(int argument_error) {
             system("clear");
