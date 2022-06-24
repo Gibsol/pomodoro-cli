@@ -23,10 +23,10 @@ public:
     int get_rest();
     int get_total_time();
 
-    void set_work(int work);
-    void set_rest(int rest);
-    void set_work_minutes(int work_minutes);
-    void set_work_seconds(int work_seconds); 
+    void set_work(int);
+    void set_rest(int);
+    void set_work_minutes(int);
+    void set_work_seconds(int); 
 
     void user_count();
     void display_timer(); 

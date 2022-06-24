@@ -31,8 +31,8 @@ int main() {
         timer.set_work_seconds(0);
 
         system("clear");
-        std::cout <<  "You have been working for " << timer.get_total_time() << " minute(s)" << std::endl << 
-        "Would you want to continue? Y/n" << std::endl; std::cin >> user_exit;
+        std::cout <<  "You have been working for " << timer.get_total_time() << " minute(s)" 
+            << std::endl << "Would you want to continue? Y/n" << std::endl; std::cin >> user_exit;
     } 
     return 0;
 }

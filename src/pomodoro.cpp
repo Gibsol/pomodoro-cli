@@ -24,7 +24,10 @@ void Pomodoro::pomodoro_work() {
     while(true) {
         sleep(1);
         display_timer();
-        std::cout << std::setw(27) << "TIME TO WORK\n" << std::setw(20) << work_minutes << work_seconds << std::endl;
+
+        std::cout << std::setw(27) << "TIME TO WORK\n" << std::setw(20) <<
+            work_minutes << work_seconds << std::endl;
+
         work_seconds++;
 
         if(work_seconds == MINUTE) {
@@ -41,7 +44,9 @@ void Pomodoro::pomodoro_rest() {
     while(true) {
         sleep(1);
         display_timer();
-        std::cout << std::setw(27) << "TIME TO REST\n" << std::setw(20) << rest_minutes << rest_seconds << std::endl;
+        std::cout << std::setw(27) << "TIME TO REST\n" << std::setw(20) << 
+            rest_minutes << rest_seconds << std::endl;
+
         rest_seconds++;
 
         if(rest_seconds == MINUTE) {
@@ -54,9 +59,14 @@ void Pomodoro::pomodoro_rest() {
 }
 
 void Pomodoro::user_count() {
-    printf("\e[?25l");
+    printf("\e[?25l"); // hides the cursor
     system("clear");
-    std::cout << "Enter how many minutes would you want to work: "; std::cin >> work;
+
+    std::cout << "Enter how many minutes would you want to work: "; 
+        std::cin >> work;
+
     total_time += work;
-    std::cout << "Enter how many minutes would you want to rest: "; std::cin >> rest;
+
+    std::cout << "Enter how many minutes would you want to rest: "; 
+        std::cin >> rest;
 }
