@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <iomanip>
 
+namespace pomodoro {
+
 class Pomodoro {
 private:
     int work;
@@ -33,6 +35,8 @@ public:
     void pomodoro_work(); 
     void pomodoro_rest(); 
 };
+
+}
 
 
 #endif

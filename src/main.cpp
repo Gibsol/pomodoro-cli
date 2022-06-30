@@ -1,5 +1,7 @@
 #include "pomodoro.cpp"
 
+namespace pomodoro {
+
 int main() {
     Pomodoro timer;
     char user_exit;
@@ -8,6 +10,7 @@ int main() {
     while(user_exit != EXIT_KEY) {
         CHECK:try {
             timer.user_count();
+
             if(timer.get_work() <= 0 | timer.get_rest() <= 0) 
                 throw(timer.get_work(), timer.get_rest());
         }
@@ -34,4 +37,6 @@ int main() {
             << std::endl << "Would you want to continue? Y/n" << std::endl; std::cin >> user_exit;
     } 
     return 0;
+}
+    
 }

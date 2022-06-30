@@ -1,5 +1,7 @@
 #include "pomodoro.h"
 
+namespace pomodoro {
+
 const int MINUTE = 60;
 const char EXIT_KEY = 'n';
 
@@ -9,10 +11,10 @@ int Pomodoro::get_work() { return work; }
 int Pomodoro::get_rest() { return rest; }
 int Pomodoro::get_total_time() { return total_time; }
 
-void Pomodoro::set_work(int work) { this->work = work; } 
-void Pomodoro::set_rest(int rest) { this->rest = rest; }
-void Pomodoro::set_work_minutes(int work_minutes) { this->work_minutes = work_minutes; }
-void Pomodoro::set_work_seconds(int work_seconds) { this->work_seconds = work_seconds; }
+void Pomodoro::set_work(int swork) { work = swork; } 
+void Pomodoro::set_rest(int srest) { rest = srest; }
+void Pomodoro::set_work_minutes(int swork_minutes) { work_minutes = swork_minutes; }
+void Pomodoro::set_work_seconds(int swork_seconds) { work_seconds = swork_seconds; }
 
 void Pomodoro::display_timer() {
     system("clear");
@@ -35,7 +37,8 @@ void Pomodoro::pomodoro_work() {
             work_seconds = 0;
         }
 
-        if(work_minutes == work) break;
+        if(work_minutes == work)
+            break;
     }
 }
 
@@ -54,7 +57,8 @@ void Pomodoro::pomodoro_rest() {
             rest_seconds = 0;
         }
 
-        if(rest_minutes == rest) break;
+        if(rest_minutes == rest)
+            break;
     }
 }
 
@@ -63,10 +67,12 @@ void Pomodoro::user_count() {
     system("clear");
 
     std::cout << "Enter how many minutes would you want to work: "; 
-        std::cin >> work;
+    std::cin >> work;
 
     total_time += work;
 
     std::cout << "Enter how many minutes would you want to rest: "; 
-        std::cin >> rest;
+    std::cin >> rest;
 }
+
+} 
